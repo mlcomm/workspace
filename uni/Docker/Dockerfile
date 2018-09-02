@@ -16,3 +16,9 @@ RUN apt-get update -q \
 EXPOSE 8008
 EXPOSE 8080
 EXPOSE 8888
+
+COPY jupyter_notebook_config.py workspace
+COPY start_jupyter.sh workspace
+
+RUN chmod 777 start_jupyter.sh \
+  && ./start_jupyter.sh
