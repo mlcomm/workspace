@@ -22,4 +22,4 @@ COPY jupyter_notebook_config.py jupyter_notebook_config.py
 RUN jupyter notebook --generate-config \
   && cp -i jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py 
   
-ENTRYPOINT ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8080", "--notebook-dir=/", "--allow-root"]
+ENTRYPOINT jupyter notebook --ip=0.0.0.0 --port=8080 --notebook-dir=/ --allow-root
