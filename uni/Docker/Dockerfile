@@ -20,7 +20,9 @@ EXPOSE 8888
 COPY jupyter_notebook_config.py workspace
 COPY start_jupyter.sh workspace
 
+RUN ls
 RUN cd /workspace
+RUN ls
 
 RUN chmod 777 start_jupyter.sh \
   && ./start_jupyter.sh
