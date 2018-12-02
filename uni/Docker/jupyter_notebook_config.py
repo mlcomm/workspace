@@ -259,7 +259,7 @@ c.NotebookApp.open_browser = False
 #  
 #  The string should be of the form type:salt:hashed-password.
 # c.NotebookApp.password = u'sha1:1d4ec8e8f5e4:8cbe72c53450258d404edd5dc81cf582b88d0326'
-c.NotebookApp.password = u'sha1:afde99dd2753:ac29e3f87ad1eaece7a0e64ca476109d94810b7d'
+c.NotebookApp.password = u'sha1:d75b5ccf0684:196eb697d8d6a8664ee50674293f6f25091b3a31'
 ## Forces users to use a password for the Notebook server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
 #  other's machine through ssh.
